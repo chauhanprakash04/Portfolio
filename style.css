@@ -1,0 +1,438 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: rgb(4, 4, 40);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    padding: 0 4.8rem;
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    height: 70px;
+}
+
+.navbar-list {
+    display: flex;
+    gap: 48px;
+    list-style: none;
+}
+
+nav ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+
+}
+
+nav ul li a:hover {
+    color: rgb(28, 166, 216);
+}
+
+#Home {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5rem 0;
+}
+
+#Home .leftsection .name {
+    font-size: 4rem;
+}
+
+#Home .leftsection {
+    font-size: 2rem;
+}
+
+#Home .leftsection .name .color {
+    color: rgb(28, 166, 216);
+}
+
+#Home .rightsection img {
+    width: 500px;
+}
+
+#About {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 7rem 7rem;
+}
+
+#About .leftsection {
+    margin: 0 7rem;
+}
+
+#About .leftsection img {
+    width: 300px;
+}
+
+#About .rightsection {
+    width: 50%;
+}
+
+#About .rightsection .about {
+    font-size: 3rem;
+}
+
+#About .rightsection .about-text {
+    text-align: justify;
+}
+
+#Skills {
+    margin: 7rem 7rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+#Skills .skill-text {
+    font-size: 3rem;
+    text-align: center;
+}
+
+#Skills .techs {
+    display: grid;
+    grid-template-columns: repeat(7, 0.9fr);
+    animation: 1s ease-out 0s 1 slideUp;
+}
+
+#Skills .techs .tech-name {
+    font-size: medium;
+    position: relative;
+    display: inline-block;
+    margin: 20px 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+#Skills .techs .tech-name:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1)
+}
+
+#Skills .techs .tech-name img {
+    height: 100px;
+    display: block;
+}
+
+#Skills .techs .tech-name .img-text {
+    position: absolute;
+    width: 100%;
+    left: 1.7rem;
+}
+
+#Projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 7rem 7rem;
+}
+
+#Projects .pro-text {
+    font-size: 3rem;
+    text-align: center;
+}
+
+#Projects .pro-container {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    gap: 100px 50px;
+    padding: 80px 50px;
+}
+
+#Projects .pro-container .card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 350px;
+    max-width: 100%;
+    height: 300px;
+    background: rgb(34, 34, 108);
+    border-radius: 20px;
+    transition: 0.5s;
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+}
+
+#Projects .pro-container .card:hover {
+    height: 400px;
+}
+
+#Projects .pro-container .card .img-box {
+    position: absolute;
+    top: 20px;
+    width: 300px;
+    height: 220px;
+    background: #000000;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+#Projects .pro-container .card:hover .img-box {
+    top: -100px;
+    scale: 0.75;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+}
+
+#Projects .pro-container .card .img-box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#Projects .pro-container .card .content {
+    position: absolute;
+    top: 252px;
+    width: 100%;
+    height: 35px;
+    padding: 0 30px;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+#Projects .pro-container .card:hover .content {
+    top: 130px;
+    height: 250px;
+}
+
+#Projects .pro-container .card .content h2 {
+    font-size: 1.5rem;
+    color: white;
+}
+
+#Projects .pro-container .card .content p {
+    color: white;
+    text-align: justify;
+}
+
+#Projects .pro-container .card .content a {
+    position: relative;
+    top: 15px;
+    display: inline-block;
+    padding: 12px 25px;
+    text-decoration: none;
+    background-color: rgb(4, 4, 40);
+    color: rgb(28, 166, 216);
+    font-weight: 500;
+}
+
+#Projects .pro-container .card .content a:hover {
+    opacity: 0.8;
+    background-color: #000000;
+    color: white;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact .con-text {
+    font-size: 3rem;
+    text-align: center;
+}
+
+#contact .con-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0px;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+#contact .con-logo a {
+    margin: 0px 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+#contact .con-logo a:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+#contact .con-logo a img {
+    height: 50px;
+}
+
+.mobile-navbar-btn {
+    display: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.mobile-nav-icon {
+    width: 3rem;
+    height: 3rem;
+    color: white;
+}
+
+.mobile-nav-icon[name="close-outline"] {
+    display: none;
+}
+
+@media (max-width: 980px) {
+
+    header {
+        position: relative;
+    }
+
+    .mobile-navbar-btn {
+        display: block;
+        z-index: 999;
+    }
+
+    .navbar {
+        /* display: none; */
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+        background: rgb(34, 34, 108);
+        top: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(100%);
+        transition: all 0.5s linear;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+
+    .navbar-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .active .navbar {
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+
+    .active .mobile-navbar-btn .mobile-nav-icon[name="close-outline"] {
+        display: block;
+    }
+
+    .active .mobile-navbar-btn .mobile-nav-icon[name="menu-outline"] {
+        display: none;
+    }
+
+    #Home {
+        flex-direction: column-reverse;
+    }
+
+    #About {
+        justify-content: center;
+        align-items: center;
+    }
+
+    #About .leftsection {
+        display: none;
+    }
+
+    #About .rightsection {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+    }
+
+    #About .rightsection .about-text {
+        text-align: justify;
+    }
+
+    #Skills .techs {
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+
+    #Projects .pro-container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 780px) {
+
+    header {
+        padding: 0 1.5rem;
+    }
+
+    #Home .rightsection img {
+        width: 300px;
+    }
+
+    #Home .leftsection .name {
+        font-size: 1.8rem;
+    }
+
+    #Home .leftsection {
+        font-size: 0.8rem;
+    }
+
+    #Skills .techs .tech-name img {
+        height: 70px;
+    }
+    
+    #Skills .techs .tech-name .img-text {
+        left: 0.8rem;
+    }
+
+    #contact .con-logo a img {
+        height: 40px;
+    }
+}
+
+@media (max-width:480px) {
+
+    #About .rightsection .about {
+        font-size: 1.8rem;
+    }
+    
+    #About .rightsection .about-text {
+        font-size: 0.8rem;
+    }
+
+    #Skills .skill-text {
+        font-size: 1.8rem;
+    }
+
+    #Projects .pro-text {
+        font-size: 1.8rem;
+    }
+
+    #contact .con-text {
+        font-size: 1.8rem;
+    }
+}
