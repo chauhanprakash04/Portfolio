@@ -311,7 +311,7 @@ nav ul li a:hover {
     }
 
     .navbar {
-        /* display: none; */
+        display: none;
         height: 100vh;
         width: 100%;
         position: absolute;
@@ -417,22 +417,22 @@ nav ul li a:hover {
 @media (max-width:480px) {
 
     #About .rightsection .about {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
     
     #About .rightsection .about-text {
-        font-size: 0.8rem;
+        font-size: 0.5rem;
     }
 
     #Skills .skill-text {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
 
     #Projects .pro-text {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
 
     #contact .con-text {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
 }

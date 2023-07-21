@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
     <title>Prakash-Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="Images/logo.jpg">
 </head>
 
 <body>
@@ -18,11 +19,11 @@
         </a>
         <nav class="navbar">
             <ul class="navbar-list">
-                <li><a clas="navbar-link" href="/">Home</a></li>
-                <li><a clas="navbar-link" href="#About">About</a></li>
-                <li><a clas="navbar-link" href="#Skills">Skills</a></li>
-                <li><a clas="navbar-link" href="#Projects">Projects</a></li>
-                <li><a clas="navbar-link" href="#contact">Contact</a></li>
+                <li><a clas="navbar-link" href="/" onclick="hidenavbar()">Home</a></li>
+                <li><a clas="navbar-link" href="#About" onclick="hidenavbar()">About</a></li>
+                <li><a clas="navbar-link" href="#Skills" onclick="hidenavbar()">Skills</a></li>
+                <li><a clas="navbar-link" href="#Projects" onclick="hidenavbar()">Projects</a></li>
+                <li><a clas="navbar-link" href="#contact" onclick="hidenavbar()">Contact</a></li>
             </ul>
         </nav>
         <div class="mobile-navbar-btn">
@@ -184,6 +185,9 @@
 
         const toggle = () => {
             nav_header.classList.toggle("active");
+        }
+        const hidenavbar = () => {
+            nav_header.classList.remove("active");
         }
         mobile_nav.addEventListener("click", () => toggle());
     </script>
